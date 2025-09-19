@@ -6,9 +6,9 @@
     }
 
     body {
-        background-color: hsl(212, 45%, 89%);
         max-width: 375px;
         width: 100%;
+        background-color: hsl(212, 45%, 89%);
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -27,8 +27,8 @@
     .container img {
         width: 290px;
         margin: 15px;
-        /* border: 1px solid blue; */
         border-radius: 10px;
+        /* border: 1px solid red; */
     }
 
     .content {
@@ -40,26 +40,30 @@
     }
 
     .content h1 {
+        color: hsl(218, 44%, 22%);
         font-size: 22px;
         font-weight: 700;
-        color: hsl(218, 44%, 22%);
     }
 
     .container p {
-        font-size: 16px;
         color: hsl(216, 15%, 48%);
+        font-size: 16px;
     }
     
     .attribution {
-        font-size: 11px; 
-        text-align: center; 
         display: flex;
         justify-content: center;
+        font-size: 11px; 
+        text-align: center; 
     }
     
     .attribution a {
         color: hsl(228, 45%, 44%);
     }
+
+
+
+    
 
     @media only screen and (min-width: 375px) {
         body {
