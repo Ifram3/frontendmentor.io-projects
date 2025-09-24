@@ -97,16 +97,14 @@ body {
 
 
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
     .container {
         max-width: 300px;
         min-height: 450px;
-        border: 1px solid red;
 }
 
     .container img {
         max-width: 268px;
-        border: 1px solid red;
 }
 
     .content {
