@@ -59,7 +59,6 @@ body {
     border-radius: 20px;
     box-shadow: 8px 8px 0 0 #000;
     background-color: var(--white);
-    opacity: 1;
 }
 
 .container img {
@@ -67,7 +66,6 @@ body {
     max-width: 279px;
     max-height: 200px;
     border-radius: 10px;
-    opacity: 1;
 }
 
 .content {
@@ -77,8 +75,117 @@ body {
     width: 100%;
     max-width: 279px;
     max-height: 173px;
-    opacity: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+#title {
+    width: 73px;
+    height: 26px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+}
+
+#title h1 {
+    width: 49px;
+    height: 18px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#title h1, 
+#date p,
+.content h2,
+h2 + p,
+.author h3 {
+    color: var(--gray-950);
+    font-family: 'Figtree';
+    letter-spacing: 0%;
+    line-height: 150%;
+}
+
+#date p{
+    width: 123px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content h2 {
+    width: 279px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+ h2 + p {
+    width: 279px;
+    height: 63px;
+    font-size: 14px;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 129px;
+    height: 32px;
+    /* border: 1px solid red; */
+}
+
+.author img {
+    width: 100%;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.author h3 {
+    align-self: center;
+    width: 85px;
+    height: 21px;
+    color: var(--gray-950);
+    font-size: 14px;
+    font-weight: 800;
 }
 
 
+
+
+
+@media only screen and (min-width: 1440px) {
+    body {
+        min-width: 1440px;
+        min-height: 960px;
+        border: 1px solid red;
+    }
+
+    .container {
+        max-width: 384px;
+        max-height: 522px;
+        margin: 219px auto;
+    }
+
+    .container img {
+        max-width: fit-content;
+    }
+
+    .content {
+        max-width: inherit;
+        max-height: 194px;
+        border: 1px solid red;
+    }
+
+    #title {
+        width: 82px;
+        height: 29px;
+    }
+
+    #title h1 {
+        width: 58px;
+        height: 21px;
+        font-size: 14px;
+    }
+}
