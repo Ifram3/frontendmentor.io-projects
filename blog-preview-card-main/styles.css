@@ -43,7 +43,6 @@ body {
     min-height: 812px;
     background-color: var(--yellow);
     opacity: 1;
-    /* border: 1px solid red; */
 }
 
 .container {
@@ -75,7 +74,6 @@ body {
     width: 100%;
     max-width: 279px;
     max-height: 173px;
-    /* border: 1px solid red; */
 }
 
 #title {
@@ -133,7 +131,6 @@ h2 + p,
     gap: 12px;
     width: 129px;
     height: 32px;
-    /* border: 1px solid red; */
 }
 
 .author img {
@@ -159,7 +156,6 @@ h2 + p,
     body {
         min-width: 1440px;
         min-height: 960px;
-        border: 1px solid red;
     }
 
     .container {
@@ -175,7 +171,6 @@ h2 + p,
     .content {
         max-width: inherit;
         max-height: 194px;
-        border: 1px solid red;
     }
 
     #title {
@@ -187,5 +182,28 @@ h2 + p,
         width: 58px;
         height: 21px;
         font-size: 14px;
+    }
+
+    #date p{
+        width: 143px;
+        height: 21px;
+        font-size: 14px;
+    }
+
+    .content h2 {
+        width: 336px;
+        height: 36px;
+        font-size: 24px;
+    }
+
+    .content h2:hover,
+    .content h2:focus {
+        color: var(--yellow);
+    }
+
+    h2 + p {
+        width: 336px;
+        height: 72px;
+        font-size: 16px;
     }
 }
