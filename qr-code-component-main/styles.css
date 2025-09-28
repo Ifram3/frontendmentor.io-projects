@@ -124,8 +124,8 @@ body {
 
 @media only screen and (min-width: 1440px) {
     body {
-        max-width: 1440px;
-        max-height: 960px;
+        min-width: 1440px;
+        min-height: 960px;
     }
 
     .container {
