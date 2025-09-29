@@ -41,6 +41,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [qr-code-scanme](https://qr-code-scanme.netlify.app/)
+- Website - [iFram3](https://qr-code-scanme.netlify.app/)
 - Frontend Mentor - [@Ifram3](https://www.frontendmentor.io/profile/Ifram3)
-- Twitter - [@yourusername](https://www.twitter.com/i_Fram3)
+- Twitter - [i_Fram3](https://www.twitter.com/i_Fram3)
