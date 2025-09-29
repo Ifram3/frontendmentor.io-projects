@@ -97,7 +97,7 @@ body {
     font-weight: 800;
 }
 
-#date p{
+#date {
     width: 123px;
     height: 18px;
     font-size: 12px;
@@ -178,7 +178,7 @@ body {
         font-size: 14px;
     }
 
-    #date p{
+    #date {
         width: 143px;
         height: 21px;
         font-size: 14px;
