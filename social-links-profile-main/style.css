@@ -1,3 +1,31 @@
+/* @font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
 :root {
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
@@ -17,13 +45,73 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
     background-color: var(--grey-900);
     color: var(--white);
-    border: 1px solid orange;
+    font-family: Inter, sans-serif;
+    /* border: 1px solid orange; */
 }
 
 .container {
     width: 100%;
     max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: var(--grey-800);
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.author img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 34px;
+}
+
+.details h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.details h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.author + p {
+    color: hsl(0, 10%, 86%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.accts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.accts p {
+    background-color: var(--grey-700);
+    width: 100%;
+    padding: 15px 80px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
 }
