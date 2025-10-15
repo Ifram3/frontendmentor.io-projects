@@ -62,6 +62,7 @@ body {
     justify-content: center;
     gap: 20px;
     background-color: var(--grey-800);
+    border-radius: 12px;
 }
 
 .author {
