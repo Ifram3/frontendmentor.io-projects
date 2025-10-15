@@ -1,27 +1,27 @@
 /* @font-face {
-    font-family: Inter;
-    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf) format("truetype");
     font-weight: 100 900;
     font-style: normal;
 } */
 
 @font-face {
-    font-family: Inter;
-    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Bold.ttf) format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
     font-weight: 600;
     font-style: normal;
 }
@@ -40,7 +40,7 @@
 }
 
 body {
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,8 @@ body {
     padding: 0 20px;
     background-color: var(--grey-900);
     color: var(--white);
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
     /* border: 1px solid orange; */
 }
 
@@ -94,10 +95,9 @@ body {
     color: var(--green);
 }
 
-.author + p {
+.container > p {
     color: hsl(0, 10%, 86%);
     font-weight: 400;
-    font-size: 14px;
 }
 
 .accts {
@@ -107,11 +107,30 @@ body {
     margin-bottom: 30px;
 }
 
-.accts p {
+.accts a {
     background-color: var(--grey-700);
-    width: 100%;
+    color: var(--white);
     padding: 15px 80px;
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 1440px) {
+    .accts a {
+        padding: 15px 90px;
+    }
+
+    .accts a:hover,
+    .accts a:focus {
+        background-color: var(--green);
+        color: var(--grey-900);
+        cursor: pointer;
+        outline: none;
+    }
 }
