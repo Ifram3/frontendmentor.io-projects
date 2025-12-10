@@ -29,9 +29,14 @@
 :root {
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
+    --milk: hsl(0, 10%, 86%);
     --grey-700: hsl(0, 0%, 20%);
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: hsl(0, 0%, 8%);
+
+    --size-xs: 0.94rem;
+    --size-sm: 1.25rem;
+    --size-md: 1.875rem;
 }
 
 * {
@@ -45,22 +50,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    /* padding: 0 var(--size-sm); */
+    padding-inline: var(--size-sm);
     background-color: var(--grey-900);
     color: var(--white);
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     /* border: 1px solid orange; */
 }
 
 .container {
     width: 100%;
-    max-width: 375px;
+    max-width: 23.44rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: var(--size-sm);
     background-color: var(--grey-800);
     border-radius: 12px;
 }
@@ -69,49 +75,53 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: var(--size-md);
 }
 
-.author img {
-    max-width: 100px;
+img {
+    max-width: 6.25rem;
     border-radius: 50%;
-    margin-top: 30px;
+    /* margin-top: var(--size-md); */
+    margin-block-start: var(--size-md);
 }
 
 .details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 34px;
+    line-height: 2.13rem;
 }
 
-.details h1 {
-    font-size: 26px;
+h1 {
+    font-size: 1.63rem;
     font-weight: 600;
 }
 
-.details h2 {
-    font-size: 15px;
+h2 {
+    font-size: var(--size-xs);
     font-weight: 600;
     color: var(--green);
 }
 
-.container > p {
-    color: hsl(0, 10%, 86%);
+p {
+    color: var(--milk);
     font-weight: 400;
 }
 
 .accts {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: var(--size-xs);
+    /* margin-bottom: var(--size-md); */
+    margin-block-end: var(--size-md);
 }
 
 .accts a {
     background-color: var(--grey-700);
     color: var(--white);
-    padding: 15px 80px;
+    /* padding: var(--size-xs) 5rem; */
+    padding-block: var(--size-xs);
+    padding-inline: 5rem;
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
@@ -122,9 +132,11 @@ body {
 
 
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90em) {
     .accts a {
-        padding: 15px 90px;
+        /* padding: var(--size-xs) 5.63rem; */
+        padding-block: var(--size-xs);
+        padding-inline: 5.63rem;
     }
 
     .accts a:hover,
