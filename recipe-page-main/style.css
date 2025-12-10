@@ -21,6 +21,15 @@
     --brown-800: hsl(14, 45%, 36%);
     --rose-800: hsl(332, 51%, 32%);
     --rose-50: hsl(330, 100%, 98%);
+
+    --size-2xs: 0.31rem;
+    --size-xs: 0.625rem; 
+    --size-sm: 0.75rem; 
+    --size-md: 0.94rem; 
+    --size-lg: 1.125rem; 
+    --size-xl: 1.25rem; 
+    --size-2xl: 1.56rem; 
+    --size-3xl: 1.875rem; 
 }
 
 * {
@@ -30,15 +39,15 @@
 
 body {
     width: 100%;
-    max-width: 375px;
+    max-width: 23.44rem;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Outfit";
-    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: var(--size-2xl);
     color: var(--stone-600);
     background-color: var(--white);
 }
@@ -48,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: var(--size-xl);
 }
 
 img {
@@ -58,53 +67,54 @@ img {
 section {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: var(--size-2xl);
     width: 100%;
-    max-width: 318px;
+    max-width: 19.875rem;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-top: 15px;
+    gap: var(--size-2xl);
+    margin-block-start: var(--size-md);
 }
 
-.description h1 {
+h1 {
     font-family: "Young Serif", sans-serif;
-    font-size: 35px;
-    line-height: 38px;
+    font-size: 2.19rem;
+    line-height: 2.38rem;
     font-weight: 400;
     color: var(--stone-900);
 }
 
-.description p{
-    padding-right: 1px;
+p {
+    padding-inline-end: 0.0625rem;
 }
 
 .preparation {
-    padding: 18px 0 10px 20px;
+    padding-block: var(--size-lg) var(--size-xs);
+    padding-inline-start: var(--size-xl);
     background-color: var(--rose-50);
 }
 
-.preparation h2 {
-    margin-bottom: 12px;
+h2 {
+    margin-block-end: var(--size-sm);
     color: var(--rose-800);
-    font-size: 20px;
+    font-size: var(--size-xl);
 }
 
-.preparation ul {
-    max-width: 231px;
-    padding-left: 20px;
+ul {
+    max-width: 14.44rem;
+    padding-inline-start: var(--size-xl);
 }
 
-ul li {
-    padding-left: 12px;
-    margin-bottom: 10px;
+li {
+    padding-inline-start: var(--size-sm);
+    margin-block-end: var(--size-xs)
 }
 
-ul li::marker {
-    font-size: 11px;
+li::marker {
+    font-size: 0.69rem;
 }
 
 li span {
@@ -115,28 +125,21 @@ hr {
     border: 1px solid var(--stone-150)
 }
 
-.ingredients h3,
-.instructions h3,
-.nutrition h3{
-    margin-bottom: 18px;
+h3 {
+    margin-block-end: var(--size-lg);
     color: var(--brown-800);
-    font-family: "Young Serif";
-    font-size: 26px;
+    font-family: "Young Serif", sans-serif;
+    font-size: 1.625rem;
     font-weight: 400;
 }
 
 .ingredients ul,
 .instructions ol {
-    padding-left: 22px;
-}
-
-ol li {
-    padding-left: 12px;
-    margin-bottom: 10px;
+    padding-inline-start: 1.38rem;
 }
 
 ol li::marker {
-    font-size: 15px;
+    font-size: var(--size-md);
     font-weight: 700;
     color: var(--brown-800);
 }
@@ -144,21 +147,23 @@ ol li::marker {
 .nutrition {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-block-end: 2.5rem;
 }
 
 .nutrition p {
-    padding-right: 5px;
-    margin-bottom: 10px;
+    padding-inline-end: var(--size-2xs);
+    margin-block-end: var(--size-xs);
 }
 
 .nutri {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 25px;
+    gap: var(--size-2xl);
     border-bottom: 1px solid var(--stone-150);
-    padding: 10px 20px 10px 30px;
+    padding-block: var(--size-xs);
+    padding-inline-start: var(--size-3xl);
+    padding-inline-end: var(--size-xl);
 }
 
 .nutri:last-child {
@@ -166,7 +171,7 @@ ol li::marker {
 }
 
 .label {
-    flex: 0 0 100px;
+    flex: 0 0 6.25rem;
 }
 
 .value {
@@ -179,18 +184,18 @@ ol li::marker {
 
 
 
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 24.375em) {
     body {
-        max-width: 1440px;
-        font-size: 12px;
-        line-height: 20px;
+        max-width: 90rem;
+        font-size: var(--size-sm);
+        line-height: var(--size-xl);
         background-color: var(--stone-100);
     }
 
     .container {
         width: 90%;
-        max-width: 555px;
-        margin: 70px 0;
+        max-width: 34.69rem;
+        margin-block: 4.375rem;
         background-color: var(--white);
         border-radius: 20px;
     }
@@ -198,54 +203,48 @@ ol li::marker {
     img {
         width: 90%;
         border-radius: 10px;
-        margin-top: 20px;
+        margin-block-start: var(--size-xl);
     }
 
     section {
         width: 90%;
-        max-width: 500px;
+        max-width: 31.25rem;
     }
 
     .description {
-        gap: 10px;
-        margin-top: 5px;
+        gap: var(--size-xs);
+        margin-block-start: var(--size-2xs);
     }
 
-    .description h1 {
-        font-size: 30px;
+    h1 {
+        font-size: var(--size-3xl);
     }
 
-    .preparation h2 {
-        font-size: 15px;
+    h2 {
+        font-size: var(--size-md);
     }
 
-    ul li {
-        margin-bottom: 5px;
+    li {
+        margin-block-end: var(--size-2xs);
     }
 
-    ul li::marker {
-        font-size: 8px;
+    li::marker {
+        font-size: 0.5rem;
     }
 
-    .ingredients h3,
-    .instructions h3,
-    .nutrition h3 {
-        font-size: 20px;
-    }
-
-    ol li {
-        margin-bottom: 5px;
+    h3 {
+        font-size: var(--size-xl);
     }
 
     ol li::marker {
-        font-size: 10px;
+        font-size: var(--size-xs);
     }
 
     .nutrition {
-        margin-bottom: 15px;
+        margin-block-end: var(--size-md);
     }
 
     .nutri {
-        gap: 125px;
+        gap: 7.81rem;
     }
 }

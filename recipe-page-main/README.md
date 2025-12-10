@@ -21,7 +21,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Ifram3/frontendmentor.io-projects/tree/main/recipe-page-main)
+- Solution URL: [Solution](https://github.com/Ifram3/RECIPE-PAGE)
 - Live Site URL: [Live Site](https://tastyrecipepage.netlify.app/)
 
 ## My process
@@ -43,7 +43,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ```css
 .label {
-    flex: 0 0 100px;
+    flex: 0 0 6.25rem;
 }
 
 .value {
