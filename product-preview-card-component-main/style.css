@@ -3,13 +3,17 @@
 :root {
     --primary-500: hsl(158, 36%, 37%); 
     --primary-700: hsl(158, 42%, 18%); 
-
     --black: hsl(212, 21%, 14%);
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
     --white: hsl(0, 0%, 100%);
 
-    --size: 14px;
+    --size-2xs: 0.31rem;
+    --size-xs: 0.625rem; 
+    --size-sm: 0.75rem; 
+    --size-md: 0.94rem; 
+    --size-lg: 1.75rem; 
+    --size-xl: 12.5rem; 
 }
 
 * {
@@ -24,8 +28,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: var(--size);
-    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: var(--grey);
     background-color: var(--cream);
@@ -36,16 +40,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 60px;
-    margin-bottom: 120px;
-    padding-bottom: 30px;
+    gap: 1.25rem;
+    margin-block-start: 3.75rem;
+    margin-block-end: 7.5rem;
+    padding-block-end: 1.9rem;
     background-color: var(--white);
     border-radius: 5px;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 5px;
 }
 
@@ -57,56 +61,57 @@ img {
     width: 87%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--size-md);
 }
 
-#name {
+.name {
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.19rem;
 }
 
 h1 {
-    max-width: 265px;
-    line-height: 28px;
-    font-family: "Fraunces";
-    font-size: 28px;
+    max-width: 16.56rem;
+    line-height: var(--size-lg);
+    font-family: "Fraunces", sans-serif;
+    font-size: var(--size-lg);
     color: var(--black);
 }
 
-.description p {
-    max-width: 240px;
-    font-size: 12px;
-    line-height: 18px;
+p {
+    max-width: 15rem;
+    font-size: var(--size-sm);
+    line-height: 1.125rem;
 }
 
 .price-list {
     display: flex;
-    gap: 15px;
+    gap: var(--size-md);
     flex-wrap: wrap;
 }
 
-#cp {
-    font-size: 24px;
-    font-family: "Fraunces";
+.cp {
+    font-size: 1.5rem;
+    font-family: "Fraunces", sans-serif;
     font-weight: 700;
     color: var(--primary-500);
 }
 
-#pp {
+.pp {
     align-self: center;
-    font-size: 10px;
+    font-size: var(--size-xs);
     font-weight: 600;
     text-decoration: line-through;
 }
 
 button {
-    max-width: 230px; 
+    max-width: 14.38rem; 
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 12px 15px;
-    font-family: "Montserrat";
-    font-size: 10px;
+    gap: var(--size-xs);
+    padding-block: var(--size-sm);
+    padding-inline: var(--size-md);
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--size-xs);
     font-weight: 500;
     color: var(--white);
     background-color: var(--primary-500);
@@ -115,40 +120,36 @@ button {
 }
 
 button img {
-    max-width: 12px;
+    max-width: var(--size-sm);
 }
 
 
 
 
 
-@media only screen and (min-width: 390px) {
-    h1 {
-        max-width: none;
-    }
-
-    .description p {
+@media only screen and (min-width: 24.38em) {
+    h1, p {
         max-width: none;
     }
 
     button {
-        max-width: 300px;
+        max-width: 18.75rem;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
     .container {
         width: 90%;
-        max-width: 500px;
+        max-width: 31.25rem;
         flex-direction: row;
-        gap: 25px;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        gap: 1.56rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-block-end: 0;
     }
 
     img {
-        max-height: 380px;
+        max-height: 23.75rem;
         border-radius: 5px 0 0 5px;  
     }
 
@@ -160,24 +161,18 @@ button img {
         display: block;
     }
 
-    #name {
-        font-size: 10px;
+    .name {
+        font-size: var(--size-xs);
     }
 
-    h1 {
-        max-width: 200px;
-        margin-bottom: 5px;
-    }
-
-    .description p {
-        max-width: 200px;
-        margin-bottom: 5px;
-        margin-bottom: 5px;
+    h1, p {
+        max-width: var(--size-xl);
+        margin-block-end: var(--size-2xs);
     }
 
     button {
-        margin-top: 8px;
-        max-width: 200px;
+        margin-block-start: 0.5rem;
+        max-width: var(--size-xl);
     }
 
     button:hover {
